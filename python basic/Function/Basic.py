@@ -49,7 +49,7 @@ print(add_multiple(3,7))
 
 
 def alreadyParameter(name, old, man = True):    # 이런건 첨보는데, 매개변수에 초기값을 넣어준다라!! 대박!
-    print("나의 이름은 %s 입니다" % name)
+    print("나의 이름은 %s 입니다" % name)         # 만약 초기값을 설정한다면 매개변수 젤 뒤쪽에 배치시켜야 오류가 생기지 않으니 주의!!!!
     print("나의 나이는 %s세 입니다" % old)
 
     if man:
@@ -62,3 +62,4 @@ man = True
 woman = False
 alreadyParameter(name, old, man)
 alreadyParameter(name, old, woman)
+
