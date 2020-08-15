@@ -4,7 +4,7 @@ buy = {'coffee': 0, 'cafuchino': 0}
 lineUp = list(buy.keys())
 money = 0
 print("사먹을 수 있는 제품 : ", lineUp)
-while True:
+while True:     # 무한루프
     if(money < 300):
         money = int(input("돈을 입력하세요 : "))
     if(money < 300): 
@@ -29,5 +29,5 @@ while True:
         if(input("돈을 다썼습니다 가게에서 나가시겠습니까? (Y/N) : ") == 'Y'):
             break
         else:
-            pass
+            continue
 print("구매내역 : ", buy)    
