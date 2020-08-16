@@ -1,19 +1,19 @@
 class FourCalculator:
-    def setData(caller, first, second):
-        caller.first = first        # caller.first --> 객체 변수!!
-        caller.second = second
+    def setData(self, first, second):
+        self.first = first        # self.first --> 객체 변수!!
+        self.second = second
 
-    def add(caller):
-        return caller.first + caller.second
+    def add(self):
+        return self.first + self.second
 
-    def sub(caller):
-        return caller.first - caller.second
+    def sub(self):
+        return self.first - self.second
 
-    def mul(caller):
-        return caller.first * caller.second
+    def mul(self):
+        return self.first * self.second
 
-    def div(caller):
-        return caller.first / caller.second
+    def div(self):
+        return self.first / self.second
 
 
 asd, qwe = 3, 5
