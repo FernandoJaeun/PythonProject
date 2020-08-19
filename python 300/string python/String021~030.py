@@ -7,7 +7,7 @@
 # license_plate = "24가 2210"
 # print(license_plate[-4])  # 일정 구간을 슬라이싱(slicing)해서 가져온다
 
-# # string = 'PYTHON'
+# # string = 'PYTHON'       # >><<>><<>><<>><<>>>><<>><<>><<>><<>>>><<>><<>><<>><<>>
 # string_reverse = []
 # for i in string:
 #     string_reverse.append(i)
@@ -17,7 +17,7 @@
 # print(string[::-1])  # 방향도 있구나!!!!!!
 
 
-# # 023 문자열 인덱싱
+# # 023 문자열 인덱싱       # >><<>><<>><<>><<>>>><<>><<>><<>><<>>>><<>><<>><<>><<>>
 # wow = "홀짝홀짝홀짝"
 # print(wow[::2])
 
@@ -39,10 +39,10 @@
 # url[urldot:]
 
 # urlsplit = url.split(".") # . 을 기준으로 조각 조각 나눈 다음 리스트로 저장
-# urlsplit[1]
+# urlsplit[1]       # >><<>><<>><<>><<>>>><<>><<>><<>><<>>>><<>><<>><<>><<>>
 
 
-# # 028 문자열은 immutable
+# # 028 문자열은 immutable      # >><<>><<>><<>><<>>>><<>><<>><<>><<>>>><<>><<>><<>><<>>
 # lang = 'python'
 # lang[0] = 'P'
 # print(lang) # 결과는?
@@ -55,7 +55,7 @@ string1 = string.replace("a","A")
 print(string1)
 
 
-# 030 replace 메서드
+# 030 replace 메서드        # >><<>><<>><<>><<>>>><<>><<>><<>><<>>>><<>><<>><<>><<>>
 string = 'abcd'
 string.replace('b', 'B')    # abcd , aBcd 두 개의 객체가 따로 따로 메모리에 할당된다. 문자열은 변경할 수 없는 자료형이기 때문이다.
 print(string)
