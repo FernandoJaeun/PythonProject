@@ -79,7 +79,7 @@ del areum
 
 # 260
 class OMG : 
-    def print() : # self (parameter 부재)
+    def print(self) : # self (parameter 부재)
         print("Oh my god")
 
 my = OMG()
