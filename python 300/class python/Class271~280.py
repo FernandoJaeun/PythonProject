@@ -10,6 +10,9 @@ class Account:
         self.name = name
         self.balance = balance
         self.bank = "SC은행"
+        self.withdrawHistory = []
+        self.depositHistory = []
+            
         num1 = random.randint(0, 999)
         num2 = random.randint(0, 99)
         num3 = random.randint(0, 999999)
@@ -20,9 +23,9 @@ class Account:
         self.account_number = num1 + '-' + num2 + '-' + num3  # 001-01-000001
         self.countOfAccount += 1
         self.accountInfo = []
-        self.accountInfo.append(self.name) 
+        self.accountInfo.append(self.name)
         self.accountInfo.append(self.bank)
-        self.accountInfo.append(self.balance)                            
+        self.accountInfo.append(self.balance)
         self.accountInfo.append(self.account_number)
         self.accountInfo.append(self.countOfAccount)
 
@@ -34,9 +37,18 @@ class Account:
         self.countOfDeposit += 1
         if self.countOfDeposit % 5 == 0:
             self.balance += self.balance * 0.01
+        self.depositHistory.append(into)
+
+    def depositHistory(self):
+        for i in self.depositHistory:
+            print(i)
 
     def withdraw(self, out):
         self.balance -= out
+        self.withdrawHistory.append(out)
+
+    def withdrawHistory(self):
+        return self.withdrawHistory
 
     def displayInfo(self):
         return self.accountInfo
@@ -85,9 +97,19 @@ data.append(k)
 data.append(l)
 data.append(p)
 
-for c in data:
-    if c.balance >= 1000000:
-        c.displayInfo()
+
 # 279
 
+for c in data:
+    if c.balance >= 1000:
+        c.deposit(1000)
+        print(c.displayInfo())
+
 # 280
+k = Account("이재윤", 1000)
+k.deposit(100)
+k.deposit(100)
+k.deposit(100)
+k.deposit(100)
+k.deposit(100)
+k.depositHistory()
