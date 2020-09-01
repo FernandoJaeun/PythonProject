@@ -14,7 +14,7 @@ with open(file="C:/Users/leeja/WorkSpace/Python/Python Project/sub/vocaulary.txt
         if answer == en[choiceVoca].strip():
             print("맞았습니다!")
         elif answer == 'q':
-            print("단어장 종료")
+            print("단어장을 종료합니다")
             break
         else:
             print("아쉽습니다", f"정답은 {en[choiceVoca].strip()} 입니다")
