@@ -10,6 +10,6 @@ with open(file="C:/Users/leeja/WorkSpace/Python/Python Project/sub/vocaulary.txt
         context = input("한국어 뜻을 입력하세요: ")
         if context == "q":
             break
-        file.write(context + "\n\n")
+        file.write(context + "\n")
 
         print("")
